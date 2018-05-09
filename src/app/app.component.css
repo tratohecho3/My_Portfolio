@@ -1,0 +1,37 @@
+.last-item {
+    margin-right: 400px;
+}
+.nav-link {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.navbar-brand {
+    margin-left: 25px;
+}
+
+.navbar-color {
+    background-color: #212529 !important;
+}
+
+.selected {
+    color: #fed134 !important;
+}
+
+.jumbotron {
+    background-image: url("../assets/laptop.jpg");
+    background-size: cover;
+    height: 500px;
+    color: white;
+    border-radius: 0 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.main-btn {
+    background-color: #fed134;
+    border-color: #fed134;
+    padding: 15px 40px;
+}
