@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { environment } from './../environments/environment';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    AngularFontAwesomeModule
+    Angular2FontawesomeModule
 
   ],
   providers: [],
