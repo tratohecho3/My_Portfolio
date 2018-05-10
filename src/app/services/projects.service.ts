@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Project } from '../project';
+import { PROJECTS} from '../list_of_projects';
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectsService {
 
-  constructor() { }
+  constructor() { 
+    
+  }
+
+  getProjects(){
+    return PROJECTS
+  }
 }
