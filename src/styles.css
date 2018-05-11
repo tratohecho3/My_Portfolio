@@ -4,3 +4,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.main-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
