@@ -1,0 +1,17 @@
+
+
+#circulito {
+    position:relative;
+    width:100%;
+    border-radius:50%;
+
+}
+
+.work-row {
+    margin-bottom: 50px;
+}
+
+.title-work{
+    vertical-align: bottom;
+}
+

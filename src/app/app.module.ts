@@ -6,11 +6,14 @@ import { environment } from './../environments/environment';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { PortfolioComponent } from './portfolio/portfolio.component'
 import { ProjectsService } from './services/projects.service';
+import { AboutComponent } from './about/about.component';
+import { WorksService } from './services/works.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,7 @@ import { ProjectsService } from './services/projects.service';
     Angular2FontawesomeModule
 
   ],
-  providers: [ProjectsService],
+  providers: [ProjectsService, WorksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
