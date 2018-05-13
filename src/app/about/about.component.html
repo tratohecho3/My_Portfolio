@@ -6,14 +6,17 @@
         </div>
       </div>
 
-      <div class="row work-row" *ngFor="let work of works">
+      <div class="row work-row h-100" *ngFor="let work of works">
         <div class="col-md-6 text-center" >
-          <img src="{{work.image}}" id="circulito">
+            <div class="img-circular"></div>
         </div>
-        <div class="col-md-6 text-center">
-          <h3 class="title-work">Responsive Design</h3>
-          <p>All the applications created by me will give you the security that is displayed on any device.</p>
-  
+        <div class="col-md-6 my-auto">
+          <div class="">
+              <h3 class="text-center">{{work.title}}</h3>
+              <p class="text-center">{{work.description}}</p>
+      
+          </div>
+
         </div>
       </div>
     </div>
