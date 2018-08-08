@@ -44,12 +44,17 @@
     border-width: 5px;
     border-color: lightgray;
    }
+.row-about {
+    margin-bottom: 70px;
+}
 
-   #caja1 {
-       
-       display: flex;
-       justify-content: center;
-   }
-   #caja2 {
-       
-   }
+.line {
+    border-left: 3px solid lightgray;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 100%;
+}
+
+.line:last-child {}

@@ -7,23 +7,23 @@
       </div>
       
       
-          <div class="row" *ngFor="let work of works; let idx = index">
+          <div class="row row-about" *ngFor="let work of works; let idx = index">
+      
               <div class="col-md-5" *ngIf="idx % 2 == 0">
-                <div id="caja2">
+                <div>
               
                     <h3 class="text-center">{{work.title}}</h3>
                     <p class="text-center">{{work.description}}</p>
                 </div>
               </div>
-              <div class="offset-md-5" *ngIf="(idx + 1) % 2 == 0">
-
-                </div>
-              <div class="col-md-2" id="caja1">
+              <div class="offset-md-5" *ngIf="(idx + 1) % 2 == 0"></div>
+              <div class="col-md-2" id="box-circle">
                   <div class="img-circular"></div>
+                  <div class="line" *ngIf="idx < works.length -1"></div>
               </div>
-
+              
               <div class="col-md-5" *ngIf="(idx + 1) % 2 == 0">
-                <div id="caja2">
+                <div>
                     
                     <h3 class="text-center">{{work.title}}</h3>
                     <p class="text-center">{{work.description}}</p>
