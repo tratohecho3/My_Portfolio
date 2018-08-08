@@ -1,4 +1,18 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+    align-items: center;
+  }
 
+.flex-container  div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
 
 #circulito {
     position:relative;
@@ -18,8 +32,8 @@
 }
 
 .img-circular{
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background-image: url('../../assets/usb.png');
     background-size: cover;
     display: block;
@@ -29,4 +43,13 @@
     border-style: solid;
     border-width: 5px;
     border-color: lightgray;
+   }
+
+   #caja1 {
+       
+       display: flex;
+       justify-content: center;
+   }
+   #caja2 {
+       
    }
