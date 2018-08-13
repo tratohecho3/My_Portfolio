@@ -8,7 +8,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component'
 import { ProjectsService } from './services/projects.service';
 import { AboutComponent } from './about/about.component';
 import { WorksService } from './services/works.service';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,9 @@ import { WorksService } from './services/works.service';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    BrowserAnimationsModule,
+    MatTabsModule
 
   ],
   providers: [ProjectsService, WorksService],
