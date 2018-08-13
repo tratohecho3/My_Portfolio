@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row" *ngFor="let volunteer of volunteer_experiences">
+      <div class="col-md-2">
+          <div class="col-md-2">
+              <div class="img-circular"></div>
+              <div class="line"></div>
+          </div>
+      </div>
+      <div class="col-md-10">
+        <h3 class="text-volunteer">{{volunteer.title}}</h3>
+        <h4 class="text-volunteer">{{volunteer.date}}</h4>
+        <p class="text-volunteer"> {{volunteer.description}}</p>
+      </div>
+    </div>
+  </div>

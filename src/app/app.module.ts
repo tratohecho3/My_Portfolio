@@ -10,11 +10,16 @@ import { AboutComponent } from './about/about.component';
 import { WorksService } from './services/works.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
+import { SkillsComponent } from './skills/skills.component';
+import { VolunteerService } from './services/volunteer.service';
+import { VolunteerComponent } from './volunteer/volunteer.component';
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent,
+    VolunteerComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatTabsModule
 
   ],
-  providers: [ProjectsService, WorksService],
+  providers: [ProjectsService, WorksService, VolunteerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

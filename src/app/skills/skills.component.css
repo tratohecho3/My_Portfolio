@@ -1,0 +1,22 @@
+.li-skills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.card-subtitle {
+    margin: 20px;
+    font-size: 18px;
+}
+.card-skills {
+    height: 100%;
+    margin: 0;
+    border-radius: 2%;
+}
+
+.row-skills {
+    padding: 20px 0px;
+}

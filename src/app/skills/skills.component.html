@@ -1,0 +1,85 @@
+<section id="portfolio">
+    <div class="container">
+      
+        
+      <div class="row row-skills">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="card text-center card-skills">
+                <div class="card-body">
+                    <i class="fa fa-5x">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-edit fa-stack-1x"></i>
+                        </span>
+                      </i>
+                  <h5 class="card-title text-center">Frontend Development</h5>
+                  <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                  <h6 class="card-subtitle text-center">Languages</h6>
+                  <ul class="text-center">
+                      <li class="li-skills" *ngFor="let language of frontend_languages">{{language.title}}</li>
+                  </ul>
+                  <h6 class="card-subtitle text-center">Frameworks and Libraries</h6>
+                  <ul class="text-center">
+                      <li class="li-skills" *ngFor="let language of frontend_frameworks_libraries">{{language.title}}</li>
+                  </ul>
+
+
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="card text-center card-skills">
+                  <div class="card-body">
+                      <i class="fa fa-5x">
+                          <span class="fa-stack fa-lg">
+                              <i class="fa fa-code fa-stack-1x"></i>
+                          </span>
+                      </i>
+                    <h5 class="card-title text-center">Backend Development</h5>
+                    <h6 class="card-subtitle text-center">Languages and Frameworks</h6>
+                    <ul class="text-center">
+                      <li class="li-skills" *ngFor="let language of backend_languages">{{language.title}}</li>
+                    </ul>
+                    <h6 class="card-subtitle text-center">Databases</h6>
+                    <ul class="text-center">
+                      <li class="li-skills" *ngFor="let language of databases">{{language.title}}</li>
+                    </ul>
+                    <h6 class="card-subtitle text-center">Others</h6>
+                    <ul class="text-center">
+                      <li class="li-skills" *ngFor="let language of backend_others">{{language.title}}</li>
+                    </ul>
+
+
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card text-center card-skills">
+                    <div class="card-body">
+                        <i class="fa fa-5x">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-flask fa-stack-1x"></i>
+                            </span>
+                        </i>
+                      <h5 class="card-title text-center">Machine Learning and others</h5>
+                      <h6 class="card-subtitle text-center">ML Libraries</h6>
+                      <ul class="text-center">
+                          <li class="li-skills" *ngFor="let language of machine_learning">{{language.title}}</li>
+                      </ul>
+                      <h6 class="card-subtitle text-center">Others</h6>
+                      <ul class="text-center">
+                          <li class="li-skills" *ngFor="let language of frontend_others">{{language.title}}</li>
+                      </ul>
+                      <h6 class="card-subtitle text-center">Operating System</h6>
+                      <ul class="text-center">
+                          <li class="li-skills" *ngFor="let language of os">{{language.title}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                
+              </div>
+        </div>
+
+    </div>
+  </section>
+  
