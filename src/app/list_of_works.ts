@@ -10,7 +10,8 @@ export const WORKS: Work[] = [
     image: '../../assets/usb.png', 
     date: 'September 2015 – July 2017',
     address: 'Caracas, Venezuela',
-    enterprise: 'Universidad Simon Bolivar'
+    enterprise: 'Universidad Simon Bolivar, Venezuela',
+    area: 'GNU-Linux Systems Administrator'
 
 },
 {title:'Intern Student', description: `Machine Learning. 
@@ -26,7 +27,8 @@ https://roitberg.chem.ufl.edu`,
 image: '../../assets/uf.jpg', 
 date: 'August 2017 – December 2017',
 address: 'Florida, Estados Unidos',
-enterprise: 'University of Florida'
+enterprise: 'University of Florida, USA',
+area: 'Machine Learning'
 
 }
 ]

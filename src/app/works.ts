@@ -5,5 +5,6 @@ export class Work{
     date:string;
     address:string;
     enterprise: string;
+    area: string;
 
 }
