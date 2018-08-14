@@ -21,6 +21,10 @@
 .fa-circle {
     color: #fed134;
 }
+.opacity {
+    cursor: not-allowed;
+    opacity: .65;
+}
 
 a {
     color: black;
