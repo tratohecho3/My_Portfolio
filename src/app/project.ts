@@ -4,5 +4,7 @@ export class Project{
     image:string;
     type_of_project:string;
     techologies:any[];
+    view: string;
+    code: string;
 
 }
