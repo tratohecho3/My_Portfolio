@@ -11,22 +11,24 @@
       
               <div class="col-md-5" *ngIf="idx % 2 == 0">
                 <div>
-              
-                    <h3 class="text-center">{{work.title}}</h3>
-                    <p class="text-center">{{work.description}}</p>
+                    <h5 class="date text-left">{{work.date}}</h5>
+                    <h3 class="title text-left">{{work.title}}</h3>
+                    <h4 class="subtitle text-left">{{work.enterprise}}</h4>
+                    
                 </div>
               </div>
               <div class="offset-md-5" *ngIf="(idx + 1) % 2 == 0"></div>
               <div class="col-md-2" id="box-circle">
-                  <div class="img-circular"></div>
+                  <img class="img-circular" src="{{work.image}}">
                   <div class="line" *ngIf="idx < works.length -1"></div>
               </div>
               
               <div class="col-md-5" *ngIf="(idx + 1) % 2 == 0">
                 <div>
+                    <h5 class=" date text-right">{{work.date}}</h5>
+                    <h3 class=" title text-right">{{work.title}}</h3>
+                    <h4 class=" subtitle text-right">{{work.enterprise}}</h4>
                     
-                    <h3 class="text-center">{{work.title}}</h3>
-                    <p class="text-center">{{work.description}}</p>
                 </div>
               </div>
           </div>

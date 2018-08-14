@@ -4,5 +4,6 @@ export class Work{
     image:string;
     date:string;
     address:string;
+    enterprise: string;
 
 }

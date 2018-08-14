@@ -1,13 +1,16 @@
 import { Work } from './works';
 
 export const WORKS: Work[] = [
-    {title:'Intern Student', description: `Machine Learning. 
-    Learning and helping in a group of student(PHD) researchers.
-    I worked in The Roitberg Research Group
-    https://roitberg.chem.ufl.edu`,
-    image: "./assets/uf.jpg", 
-    date: 'August 2017 – December 2017 (5 months)',
-    address: 'Florida, Estados Unidos'
+    {title:'Academic Preparer', description: `My responsibilities at the Laboratory of Computer Science:
+    - Hardware maintenance.
+    - GNU-Linux Systems Administrator.
+    - Responsible for solving problems made by the users.
+    - Responsible for services and protocols maintenance and configuration (e.g. DNS, DHCP, MatLab, etc.).
+    - Installation and configuration of several Linux distributions.`,
+    image: '../../assets/usb.png', 
+    date: 'September 2015 – July 2017',
+    address: 'Caracas, Venezuela',
+    enterprise: 'Universidad Simon Bolivar'
 
 },
 {title:'Intern Student', description: `Machine Learning. 
@@ -20,9 +23,10 @@ Technologies:
 
 I worked in The Roitberg Research Group
 https://roitberg.chem.ufl.edu`,
-image: "./assets/usb.png", 
-date: 'August 2017 – December 2017 (5 months)',
-address: 'Florida, Estados Unidos'
+image: '../../assets/uf.jpg', 
+date: 'August 2017 – December 2017',
+address: 'Florida, Estados Unidos',
+enterprise: 'University of Florida'
 
 }
 ]
