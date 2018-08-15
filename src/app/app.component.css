@@ -1,3 +1,12 @@
+/*HEADER*/
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+
+}
 .last-item {
     margin-right: 400px;
 }
@@ -33,14 +42,11 @@
     padding: 15px 40px;
 }
 
+/*SERVICES*/
 .fa-circle {
     color: #fed134;
 }
 
-
-#services {
-    padding-bottom: 300px;
-}
 
 /* CONTACT */
 #contact {
@@ -100,3 +106,4 @@
     max-width: 200px;
     max-height: 200px;
 }
+

@@ -2,7 +2,6 @@
 .img-circular{
     width: 160px;
     height: 160px;
-    background-image: url('../../assets/usb.png');
     background-size: cover;
     display: block;
     border-radius: 100px;

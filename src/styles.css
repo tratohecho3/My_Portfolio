@@ -11,3 +11,16 @@ body {
     margin-bottom: 50px;
     font-weight: bold;
 }
+
+section#services {
+    padding: 125px 0;
+}
+section#portfolio {
+    padding: 125px 0;
+}
+section#timeline {
+    padding: 125px 0;
+}
+section#about {
+    padding: 125px 0;
+}
