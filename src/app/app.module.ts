@@ -13,6 +13,12 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { SkillsComponent } from './skills/skills.component';
 import { VolunteerService } from './services/volunteer.service';
 import { VolunteerComponent } from './volunteer/volunteer.component';
+import { InViewportModule, WindowRef } from '@thisissoon/angular-inviewport';
+import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
+const getWindow = () => window;
+const providers = [
+  { provide: WindowRef, useFactory: (getWindow) },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +32,9 @@ import { VolunteerComponent } from './volunteer/volunteer.component';
     NgbModule.forRoot(),
     Angular2FontawesomeModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    InViewportModule.forRoot(providers),
+    ScrollSpyModule.forRoot()
 
   ],
   providers: [ProjectsService, WorksService, VolunteerService],

@@ -1,48 +1,49 @@
-<section id="timeline">
-  <div class="container">
-      <div class="row">
-        <div class="col first-row ">
-          <h1 class="text-center main-title">Timeline</h1>
+<sn-scroll-spy-section id="timeline" for="foo">
+    <div class="container">
+        <div class="row">
+          <div class="col first-row ">
+            <h1 class="text-center main-title">Timeline</h1>
+          </div>
         </div>
-      </div>
-      
-      
-          <div class="row row-about" *ngFor="let work of works; let idx = index">
-      
-              <div class="col-md-5" *ngIf="idx % 2 == 0">
-                <div>
-                    <h5 class="date text-left">{{work.date}}</h5>
-                    <h3 class="title text-left">{{work.title}}</h3>
-                    <h3 class="subtitle text-left">{{work.area}}</h3>
-                    <h4 class="subtitle text-left">{{work.enterprise}}</h4>
-                    
-                </div>
-              </div>
-              <div class="offset-md-5" *ngIf="(idx + 1) % 2 == 0"></div>
-              <div class="col-md-2" id="box-circle">
-                  <img class="img-circular" src="{{work.image}}">
-                  <div class="line" *ngIf="idx < works.length"></div>
-              </div>
-              
-              <div class="col-md-5" *ngIf="(idx + 1) % 2 == 0">
-                <div>
-                    <h5 class=" date text-right">{{work.date}}</h5>
-                    <h3 class=" title text-right">{{work.title}}</h3>
-                    <h3 class="subtitle text-right">{{work.area}}</h3>
-                    <h4 class=" subtitle text-right">{{work.enterprise}}</h4>
-                    
-                </div>
-              </div>
-          </div>
-          <div class="row">
-                <div class="offset-md-5"></div>
-                <div class="col-md-2" id="box-circle">
-                    <div class="img-circular" id="last-circle">
-                        <p class="text-center" id="be_part">Be part of My History</p>
-                    </div>
-                </div>
+        
+        
+            <div class="row row-about" *ngFor="let work of works; let idx = index">
+        
+                <div class="col-md-5" *ngIf="idx % 2 == 0">
+                  <div>
+                      <h5 class="date text-left">{{work.date}}</h5>
+                      <h3 class="title text-left">{{work.title}}</h3>
+                      <h3 class="subtitle text-left">{{work.area}}</h3>
+                      <h4 class="subtitle text-left">{{work.enterprise}}</h4>
                       
-
-          </div>
-    </div>
-</section>
+                  </div>
+                </div>
+                <div class="offset-md-5" *ngIf="(idx + 1) % 2 == 0"></div>
+                <div class="col-md-2" id="box-circle">
+                    <img class="img-circular" src="{{work.image}}">
+                    <div class="line" *ngIf="idx < works.length"></div>
+                </div>
+                
+                <div class="col-md-5" *ngIf="(idx + 1) % 2 == 0">
+                  <div>
+                      <h5 class=" date text-right">{{work.date}}</h5>
+                      <h3 class=" title text-right">{{work.title}}</h3>
+                      <h3 class="subtitle text-right">{{work.area}}</h3>
+                      <h4 class=" subtitle text-right">{{work.enterprise}}</h4>
+                      
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                  <div class="offset-md-5"></div>
+                  <div class="col-md-2" id="box-circle">
+                      <div class="img-circular" id="last-circle">
+                          <p class="text-center" id="be_part">Be part of My History</p>
+                      </div>
+                  </div>
+                        
+  
+            </div>
+      </div>
+  
+</sn-scroll-spy-section>

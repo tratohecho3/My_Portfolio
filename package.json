@@ -23,6 +23,8 @@
     "@angular/platform-browser-dynamic": "^6.1.2",
     "@angular/router": "^6.1.2",
     "@ng-bootstrap/ng-bootstrap": "^2.0.0",
+    "@thisissoon/angular-inviewport": "^3.0.1",
+    "@thisissoon/angular-scrollspy": "^2.0.0",
     "angular2-fontawesome": "^5.2.1",
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",

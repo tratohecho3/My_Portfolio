@@ -4,6 +4,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body {
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 
 .main-title {
@@ -12,15 +13,15 @@ body {
     font-weight: bold;
 }
 
-section#services {
-    padding: 125px 0;
+sn-scroll-spy-section#services {
+    padding: 145px 0;
 }
-section#portfolio {
-    padding: 125px 0;
+sn-scroll-spy-section#portfolio {
+    padding: 145px 0;
 }
-section#timeline {
-    padding: 125px 0;
+sn-scroll-spy-section#timeline {
+    padding: 145px 0;
 }
-section#about {
-    padding: 125px 0;
+sn-scroll-spy-section#about {
+    padding: 145px 0;
 }

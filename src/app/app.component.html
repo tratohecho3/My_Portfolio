@@ -1,33 +1,35 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-color" ngbDropdown>
-  <a class="navbar-brand selected" href="#">Cesar Colina</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-color">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/logo_editado.png" width="100" height="100" alt="" id="logo_cc">
+  </a>
   <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link selected" href="#services">Services <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav ml-auto" role="navigation" snScrollSpy id="foo">
+      <li class="nav-item">
+        <a class="nav-link" snScrollSpyItem for="foo" href="#services">Services <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" snScrollSpyItem for="foo" href="#portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#timeline">Timeline</a>
+          <a class="nav-link" snScrollSpyItem for="foo" href="#timeline">Timeline</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" snScrollSpyItem for="foo" href="#about">About</a>
       </li>
       <li class="nav-item last-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link"  snScrollSpyItem for="foo" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
 <header>
   <div class="jumbotron">
-    <h1 class="display-4 text-center">Hello, world!</h1>
+    <h1 class="display-4 text-center text-banner">Hello, world!</h1>
     <h1 class="display-4 text-center">Looking for a developer?</h1>
     <span class="d-sm-none d-xs-none d-none d-md-block">
         <p class="lead text-center">I'm Cesar Colina and I'm a software developer, I love web development and my work is determined for my passion, effort, innovation and efficiency. Always learning the new technologies and willing to solve any problem.</p>
@@ -35,64 +37,64 @@
 
 
     <p class="lead text-center">
-      <a class="btn btn-primary btn-lg main-btn" href="#" role="button">Let's Begin</a>
+      <a class="btn btn-primary btn-lg main-btn" href="#" role="button">LET'S BEGIN</a>
     </p>
   </div>
 </header>
 
-<section id="services">
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="text-center main-title">Services</h1>
-          </div>
-        </div>
-    
-
-        <div class="row">
-          <div class="col-sm text-center">
-            
-            <i class="fa fa-5x">
-              <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-laptop fa-stack-1x"></i>
-              </span>
-            </i>
-            <h3 class="text-center">Responsive Design</h3>
-            <p>All the applications created by me will give you the security that is displayed on any device.</p>
-          </div>
-
-          <div class="col-sm text-center">     
-            <i class="fa fa-5x">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-shopping-cart fa-stack-1x"></i>
-              </span>
-            </i>
-            <h3 class="text-center">Web Applications</h3>
-            <p>
-              I can create the application of your dreams, with all the features that your business needs.</p>
-          </div>
-          
-          <div class="col-sm text-center">         
-            <i class="fa fa-5x">
-              <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-lock fa-stack-1x"></i>
-              </span>
-            </i>
-            <h3 class="text-center">Security</h3>
-            <p>My applications are based on the latest technologies thus giving the confidence of security.</p>
-          </div>
-
-        </div>
+<sn-scroll-spy-section id="services" for="foo">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center main-title">Services</h1>
       </div>
-</section>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm text-center">
+        
+        <i class="fa fa-5x">
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-laptop fa-stack-1x"></i>
+          </span>
+        </i>
+        <h3 class="text-center">Responsive Design</h3>
+        <p>All the applications created by me will give you the security that is displayed on any device.</p>
+      </div>
+
+      <div class="col-sm text-center">     
+        <i class="fa fa-5x">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+          </span>
+        </i>
+        <h3 class="text-center">Web Applications</h3>
+        <p>
+          I can create the application of your dreams, with all the features that your business needs.</p>
+      </div>
+      
+      <div class="col-sm text-center">         
+        <i class="fa fa-5x">
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-lock fa-stack-1x"></i>
+          </span>
+        </i>
+        <h3 class="text-center">Security</h3>
+        <p>My applications are based on the latest technologies thus giving the confidence of security.</p>
+      </div>
+
+    </div>
+  </div>
+</sn-scroll-spy-section>
+
 
 <app-portfolio id="portfolio"></app-portfolio>
 <app-about id="timeline"></app-about>
-
-<section id="about">
+<sn-scroll-spy-section id="about" for="foo">
   <div class="container">
     <div class="row">
         <div class="col">
@@ -121,40 +123,41 @@
 
     </div>
   </div>
+</sn-scroll-spy-section>
 
-</section>
-
-<section id="contact">
+<sn-scroll-spy-section id="contact" for="foo">
+  
   <div class="jumbotron" id="jumbotron-contact">
-      <h1 class="text-center main-title">Contact Me</h1>
-      <form id="form-contact">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                  <div class="form-group">
-                      <label for="name">Name</label>
-                      <input required type="text" class="form-control" id="name" placeholder="Your name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your best email">
-                    <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Your message</label>
-                      <textarea required class="form-control" id="exampleFormControlTextarea1"  placeholder="How can I help you?" rows="5"></textarea>
-                    </div>
-              </div>
+    <h1 class="text-center main-title">Contact Me</h1>
+    <form id="form-contact">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input required type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your best email">
+                  <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                </div>
             </div>
-            <p class="text-center">
-                <button id="button-submit" type="submit" class="btn btn-primary">Submit</button>
-            </p>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your message</label>
+                    <textarea required class="form-control" id="exampleFormControlTextarea1"  placeholder="How can I help you?" rows="5"></textarea>
+                  </div>
+            </div>
           </div>
-        </form> 
-  </div>
-</section>
+          <p class="text-center">
+              <button id="button-submit" type="submit" class="btn btn-primary">Submit</button>
+          </p>
+        </div>
+      </form> 
+</div>
 
+
+</sn-scroll-spy-section>
 
 

@@ -1,18 +1,39 @@
 /*HEADER*/
+#logo_cc {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: white !important;
+    transition: color .2s ease-in-out !important;
+  }
+   
+  a.active {
+    color: #fed134 !important;
+  }
 .navbar {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 5;
+    padding: 0;
 
 }
 .last-item {
     margin-right: 400px;
 }
 .nav-link {
-    font-size: 20px;
+    font-size: 21px;
     margin-right: 15px;
+}
+.nav-item {
+    font-family: 'Cinzel', serif;    
+
+}
+.text-banner {
+    margin-top: 50px;
+    text-align: right;
 }
 
 .navbar-brand {
@@ -23,14 +44,14 @@
     background-color: #212529 !important;
 }
 
-.selected {
+.active {
     color: #fed134 !important;
 }
 
 .jumbotron {
-    background-image: url("../assets/laptop.jpg");
+    background-image: url("../assets/banner2.jpg");
     background-size: cover;
-    height: 500px;
+    height: 700px;
     color: white;
     border-radius: 0 !important;
 }
@@ -40,6 +61,12 @@
     background-color: #fed134;
     border-color: #fed134;
     padding: 15px 40px;
+    color: black !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;  
+    font-size: 18px;
+    color: white !important;
+
 }
 
 /*SERVICES*/
@@ -88,11 +115,12 @@
     background: #fed134;
     border-color: #fed134;
     font-size: 20px;
+    color: black;
 
 }
 
 
-/* EDUCATION */
+/* ABOUT */
 #education {
     background-color: #f7f7f7;
     height: 100%;
@@ -107,3 +135,7 @@
     max-height: 200px;
 }
 
+
+#about {
+    background: #f8f9fa;
+}
