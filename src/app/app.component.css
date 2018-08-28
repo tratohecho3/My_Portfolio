@@ -33,15 +33,15 @@ a {
 }
 .text-banner {
     margin-top: 50px;
-    text-align: right;
 }
 
 .navbar-brand {
     margin-left: 25px;
 }
 
-.navbar-color {
-    background-color: #212529 !important;
+.navbar-dark {
+    background: transparent;
+    border:none;
 }
 
 .active {
@@ -49,7 +49,7 @@ a {
 }
 
 .jumbotron {
-    background-image: url("../assets/banner2.jpg");
+    background-image: url("../assets/header-bg.jpg");
     background-size: cover;
     height: 700px;
     color: white;
@@ -126,9 +126,7 @@ a {
     height: 100%;
 }
 
-#jumbo-education {
 
-}
 
 .container-img {
     max-width: 200px;
