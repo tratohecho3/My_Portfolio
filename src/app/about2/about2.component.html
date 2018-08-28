@@ -1,0 +1,30 @@
+<sn-scroll-spy-section id="about" for="foo" class="offset">
+  <div class="container">
+    <div class="row">
+        <div class="col">
+          <h1 class="text-center main-title">About</h1>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+          <mat-tab-group>
+              <mat-tab label="Education" class="tab">
+                  <div class="jumbotron" id="jumbo-education">
+                      <h1 class="display-4">Computer Engineering</h1>
+                      <div class="container-img">
+                          <img src="../assets/usb.png" alt="University logo" class="img-fluid img-edit">
+                      </div>
+                      <p class="lead">Universidad Simon Bolivar</p>
+                      <p>2013-2017</p>
+                      <hr class="my-4">
+                      <p>Best University of Engineering in Venezuela and my second home. We are known as The University of Excellence and there is where I learned all Computer Engineering Fundamentals</p>
+                  </div>
+              </mat-tab>
+              <mat-tab label="Skills" class="tab"> <app-skills></app-skills> </mat-tab>
+              <mat-tab label="Volunteer" class="tab"> <app-volunteer></app-volunteer> </mat-tab>
+          </mat-tab-group>
+      </div>
+
+    </div>
+  </div>
+</sn-scroll-spy-section>

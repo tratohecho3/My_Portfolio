@@ -29,7 +29,7 @@
 </nav>
 <header>
   <div class="jumbotron" id="startchange">
-    <h1 class="display-4 text-center text-banner">Hello, world!</h1>
+    <h1 class="display-4 text-center text-banner" id="first-text">Hello, world!</h1>
     <h1 class="display-4 text-center text-banner">Looking for a developer?</h1>
     <span class="d-sm-none d-xs-none d-none d-md-block">
         <p class="lead text-banner">I'm Cesar Colina and I'm a software developer, I love web development and my work is determined for my passion, effort, innovation and efficiency. Always learning the new technologies and willing to solve any problem.</p>
@@ -37,7 +37,7 @@
 
 
     <p class="lead text-center">
-      <a class="btn btn-primary btn-lg main-btn" href="#" role="button">LET'S BEGIN</a>
+      <a class="btn btn-primary btn-lg main-btn" href="#services" role="button">LET'S BEGIN</a>
     </p>
   </div>
 </header>
@@ -92,72 +92,9 @@
 </sn-scroll-spy-section>
 
 
-<app-portfolio id="portfolio"></app-portfolio>
-<app-about id="timeline"></app-about>
-<sn-scroll-spy-section id="about" for="foo">
-  <div class="container">
-    <div class="row">
-        <div class="col">
-          <h1 class="text-center main-title">About</h1>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col">
-          <mat-tab-group>
-              <mat-tab label="Education" class="tab">
-                  <div class="jumbotron" id="jumbo-education">
-                      <h1 class="display-4">Computer Engineering</h1>
-                      <div class="container-img">
-                          <img src="../assets/usb.png" alt="University logo" class="img-fluid img-edit">
-                      </div>
-                      <p class="lead">Universidad Simon Bolivar</p>
-                      <p>2013-2017</p>
-                      <hr class="my-4">
-                      <p>Best University of Engineering in Venezuela and my second home. We are known as The University of Excellence and there is where I learned all Computer Engineering Fundamentals</p>
-                  </div>
-              </mat-tab>
-              <mat-tab label="Skills" class="tab"> <app-skills></app-skills> </mat-tab>
-              <mat-tab label="Volunteer" class="tab"> <app-volunteer></app-volunteer> </mat-tab>
-          </mat-tab-group>
-      </div>
-
-    </div>
-  </div>
-</sn-scroll-spy-section>
-
-<sn-scroll-spy-section id="contact" for="foo">
-  
-  <div class="jumbotron" id="jumbotron-contact">
-    <h1 class="text-center main-title">Contact Me</h1>
-    <form id="form-contact">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input required type="text" class="form-control" id="name" placeholder="Your name">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your best email">
-                  <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-                </div>
-            </div>
-            <div class="col">
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Your message</label>
-                    <textarea required class="form-control" id="exampleFormControlTextarea1"  placeholder="How can I help you?" rows="5"></textarea>
-                  </div>
-            </div>
-          </div>
-          <p class="text-center">
-              <button id="button-submit" type="submit" class="btn btn-primary">Submit</button>
-          </p>
-        </div>
-      </form> 
-</div>
-
-
-</sn-scroll-spy-section>
+<app-portfolio  class="offset" id="portfolio"></app-portfolio>
+<app-about id="timeline" class="offset"></app-about>
+<app-about2 id="about" class="offset" ></app-about2>
+<app-contact id="contact" class="offset"></app-contact>
 
 

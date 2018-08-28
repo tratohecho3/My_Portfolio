@@ -1,0 +1,24 @@
+#education {
+    background-color: #f7f7f7;
+    height: 100%;
+}
+
+
+
+.container-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+#about {
+    background: #f8f9fa;
+}
+
+.jumbotron {
+    background-image: url("../../assets/header-bg.jpg");
+    background-size: cover;
+    height: 700px;
+    color: white;
+    border-radius: 0 !important;
+}

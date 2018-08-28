@@ -1,4 +1,13 @@
 /*HEADER*/
+.offset:before { 
+    display: block; 
+    content: " "; 
+    margin-top: 5px; /* Give negative margin of your fixed element */   
+    visibility: hidden; 
+   }
+#first-text {
+    margin-top: 150px;
+}
 #logo_cc {
     margin: 0;
     padding: 0;
@@ -11,6 +20,7 @@ a {
   a.active {
     color: #fed134 !important;
   }
+
 .navbar {
     position: fixed;
     top: 0;
