@@ -31,16 +31,28 @@ sn-scroll-spy-section#contact {
 
 
 /*NAVBAR */
-.navbar-toggler:not(:disabled):not(.disabled) {
-    margin-right: 20px;
+#hamburger-button {
+    outline: none;
+}
+.fa-bars {
+    color: white;
 }
 
-.navbar-dark[_ngcontent-c0] {
-    background: black !important;
-}
-.navbar-dark .navbar-nav .nav-link {
-    margin-left: 10px;
-}
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
-    margin-left: 15px;
-}
+@media (max-width: 991.98px) { 
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        margin-right: 20px;
+    }
+    
+    .navbar-dark[_ngcontent-c0] {
+        background: black !important;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        margin-left: 10px;
+    }
+    
+    
+    .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+        margin-left: 15px;
+    }
+ }
+

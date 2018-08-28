@@ -83,7 +83,11 @@ a {
 .fa-circle {
     color: #fed134;
 }
-
+.fa-bars {
+    color: white;
+    border: none;
+    outline:none;
+}
 
 /* CONTACT */
 #contact {
