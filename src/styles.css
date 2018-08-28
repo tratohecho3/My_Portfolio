@@ -28,3 +28,19 @@ sn-scroll-spy-section#about {
 sn-scroll-spy-section#contact {
     padding: 145px 0;
 }
+
+
+/*NAVBAR */
+.navbar-toggler:not(:disabled):not(.disabled) {
+    margin-right: 20px;
+}
+
+.navbar-dark[_ngcontent-c0] {
+    background: black !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    margin-left: 10px;
+}
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+    margin-left: 15px;
+}
