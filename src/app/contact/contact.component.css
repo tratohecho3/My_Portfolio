@@ -1,5 +1,5 @@
 #contact {
-    height: 800px;
+    height: 100%;
     /*
     background-image: url("../assets/mac.png");
     background-size: 150px;
@@ -50,4 +50,23 @@
 
 .row-contact {
     margin-top: 50px;
+}
+
+.fa-circle {
+    color: #fed134;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+img {
+    margin-top: -50px;
+}
+
+@media (max-width: 575px) {
+    .form-control {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
 }
