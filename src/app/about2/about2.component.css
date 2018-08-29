@@ -3,7 +3,18 @@
     height: 100%;
 }
 
+.text-education {
+    color: black;
+}
 
+.date {
+    font-size: 30px;
+}
+
+
+.text {
+    font-size: 25px;
+}
 
 .container-img {
     max-width: 200px;
@@ -21,4 +32,22 @@
     height: 700px;
     color: white;
     border-radius: 0 !important;
+}
+
+#jumbo-education {
+    background-image: url("../../assets/simon.jpg");
+}
+
+
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 35px;
+        color: white;
+    }
+
+    .date, .text {
+        color: white;
+    }
+
 }

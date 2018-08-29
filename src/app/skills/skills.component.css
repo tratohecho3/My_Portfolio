@@ -10,6 +10,11 @@ ul {
 .card-subtitle {
     margin: 20px;
     font-size: 18px;
+    color: #8c43ff
+}
+
+.card-title {
+    font-weight: bold;
 }
 .card-skills {
     height: 100%;
@@ -19,4 +24,21 @@ ul {
 
 .row-skills {
     padding: 20px 0px;
+}
+
+.fa-edit, .fa-code, .fa-flask {
+    color: #8c43ff;
+}
+
+@media (max-width: 768px) {
+    .fa-stack-1x, .fa-stack-2x {
+        margin-left: -20px;
+    }
+
+}
+@media (max-width: 576px) {
+    .fa-stack-1x, .fa-stack-2x {
+        margin-left: 0;
+    }
+
 }

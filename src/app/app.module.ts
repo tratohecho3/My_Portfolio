@@ -17,6 +17,7 @@ import { InViewportModule, WindowRef } from '@thisissoon/angular-inviewport';
 import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
 import { About2Component } from './about2/about2.component';
 import { ContactComponent } from './contact/contact.component';
+
 const getWindow = () => window;
 const providers = [
   { provide: WindowRef, useFactory: (getWindow) },

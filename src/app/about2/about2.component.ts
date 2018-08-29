@@ -12,4 +12,6 @@ export class About2Component implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }
