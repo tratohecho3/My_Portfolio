@@ -1,7 +1,7 @@
 <sn-scroll-spy-section id="timeline" for="foo">
-    <div class="container">
+    <div class="container d-none d-xl-block d-lg-block d-xl-none d-md-block d-lg-none">
         <div class="row">
-          <div class="col first-row ">
+          <div class="col first-row">
             <h1 class="text-center main-title">Timeline</h1>
           </div>
         </div>
@@ -9,7 +9,7 @@
         
             <div class="row row-about" *ngFor="let work of works; let idx = index">
         
-                <div class="col-md-5" *ngIf="idx % 2 == 0">
+                <div class="col-5" *ngIf="idx % 2 == 0">
                   <div>
                       <h5 class="date text-left">{{work.date}}</h5>
                       <h3 class="title text-left">{{work.title}}</h3>
@@ -18,13 +18,13 @@
                       
                   </div>
                 </div>
-                <div class="offset-md-5" *ngIf="(idx + 1) % 2 == 0"></div>
-                <div class="col-md-2" id="box-circle">
+                <div class="offset-5" *ngIf="(idx + 1) % 2 == 0"></div>
+                <div class="col-2" id="box-circle">
                     <img class="img-circular" src="{{work.image}}">
                     <div class="line" *ngIf="idx < works.length"></div>
                 </div>
                 
-                <div class="col-md-5" *ngIf="(idx + 1) % 2 == 0">
+                <div class="col-5" *ngIf="(idx + 1) % 2 == 0" id="column-right">
                   <div>
                       <h5 class=" date text-right">{{work.date}}</h5>
                       <h3 class=" title text-right">{{work.title}}</h3>
@@ -35,15 +35,74 @@
                 </div>
             </div>
             <div class="row">
-                  <div class="offset-md-5"></div>
-                  <div class="col-md-2" id="box-circle">
+                <div class="col-5" *ngIf="index % 2 == 0">
+                        <div>
+                                <h5 class="date text-left">September 2018</h5>
+                                <h3 class="title text-left">Full Stack Developer</h3>
+                                <h3 class="subtitle text-left">Your Project</h3>
+                                <h4 class="subtitle text-left">Your Company, Canada</h4>
+                            
+                        </div>
+                </div>
+                  <div class="offset-5" *ngIf="(index + 1) % 2 == 0"></div>
+                  <div class="col-2" id="box-circle">
                       <div class="img-circular" id="last-circle">
                           <p class="text-center" id="be_part">Be part of My History</p>
                       </div>
                   </div>
-                        
-  
+                  <div class="col-5" *ngIf="(index + 1) % 2 == 0" id="column-right">
+                        <div>
+                                <h5 class="date text-right">September 2018</h5>
+                                <h3 class="title text-right">Full Stack Developer</h3>
+                                <h3 class="subtitle text-right">Your Project</h3>
+                                <h4 class="subtitle text-right">Your Company, Canada</h4>
+                            
+                        </div>
+                      </div>
             </div>
+
       </div>
+
+      <div class="container d-none d-sm-block d-md-none d-block d-sm-none">
+        <div class="row">
+                <div class="col first-row ">
+                    <h1 class="text-center main-title">Timeline</h1>
+                </div>
+        </div>
+                  
+        <div class="row row-sm" *ngFor="let work of works">
+          <div class="col-sm-2">
+              <div class="col-sm-2">
+                  <img class="img-circular" src="{{work.image}}">
+                  <div class="line"></div>
+              </div>
+          </div>
+          <div class="offset-sm-2"></div>
+
+          <div class="col-sm-8">
+            <h5 class="date">{{work.date}}</h5>
+            <h3 class="title">{{work.title}}</h3>
+            <h3 class="subtitle">{{work.area}}</h3>
+            <h4 class="subtitle">{{work.enterprise}}</h4>
+          </div>
+        </div>
+        <div class="row">
+            <div class="offset-md-5"></div>
+            <div class="col-2" id="box-circle">
+                <div class="img-circular" id="last-circle">
+                    <p class="text-center" id="be_part">Be part of My History</p>
+                </div>
+            </div>
+            <div class="offset-sm-2"></div>
+
+            <div class="col-sm-8">
+            <h5 class="date">September 2018</h5>
+            <h3 class="title">Full Stack Developer</h3>
+            <h3 class="subtitle">Your Project</h3>
+            <h4 class="subtitle">Your Company, Canada</h4>
+            </div>
+                
+          </div>
+    </div>
   
 </sn-scroll-spy-section>

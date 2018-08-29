@@ -51,6 +51,43 @@
     left: 50%;
     top: 100%;
 }
+
+@media (max-width: 1199px) {
+    .line {
+        left: 60%;
+        
+    }
+}
+@media (max-width: 991px) {
+    .img-circular{
+        width: 110px;
+        height: 110px;
+
+       }
+    .line {
+        height: 166px;
+        left: 59%;
+        top: 51%;
+    }
+    #be_part {
+        margin-top: 24px !important;
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .line {
+        height: 102px;
+        left: 227%;
+        top: 99%;
+    }
+}
+
+.row-sm {
+    margin-bottom: 50px;
+}
+
+
 .row-about {
     margin-bottom: 60px;
 }

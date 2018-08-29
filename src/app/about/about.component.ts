@@ -8,8 +8,10 @@ import { WorksService } from '../services/works.service';
 })
 export class AboutComponent implements OnInit {
   works;
+  index;
   constructor(private worksService: WorksService) { 
     this.works = worksService.get_works();
+    this.index = this.works.length;
   }
 
   ngOnInit() {
