@@ -67,7 +67,13 @@ img {
 
 @media (max-width: 575px) {
     .form-control {
-        font-size: 0.9rem;
+        font-size: 1rem !important;
         padding: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .form-control {
+        font-size: 1.3rem;
     }
 }

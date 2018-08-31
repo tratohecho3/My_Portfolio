@@ -29,10 +29,15 @@ ul {
 .fa-edit, .fa-code, .fa-flask {
     color: #8c43ff;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .fa-stack-1x, .fa-stack-2x {
         margin-left: -20px;
+    }
+
+}
+@media (max-width: 768px) {
+    .fa-stack-1x, .fa-stack-2x {
+        margin-left: -10px;
     }
 
 }
