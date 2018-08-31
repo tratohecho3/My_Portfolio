@@ -17,7 +17,9 @@ import { InViewportModule, WindowRef } from '@thisissoon/angular-inviewport';
 import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
 import { About2Component } from './about2/about2.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 const getWindow = () => window;
 const providers = [
   { provide: WindowRef, useFactory: (getWindow) },
@@ -39,7 +41,10 @@ const providers = [
     BrowserAnimationsModule,
     MatTabsModule,
     InViewportModule.forRoot(providers),
-    ScrollSpyModule.forRoot()
+    ScrollSpyModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
 
   ],
   providers: [ProjectsService, WorksService, VolunteerService],

@@ -22,13 +22,9 @@ a {
   }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 5;
     padding: 0;
-
+    width: 100vw;
 }
 .last-item {
     margin-right: 400px;

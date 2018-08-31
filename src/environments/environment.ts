@@ -4,6 +4,14 @@
 
 export const environment = {
   production: false,
+  firebase: {
+    apiKey: "AIzaSyAUILr9v2JE6VYXulWwtRArIz04979BfBw",
+    authDomain: "my-portfolio-9a99c.firebaseapp.com",
+    databaseURL: "https://my-portfolio-9a99c.firebaseio.com",
+    projectId: "my-portfolio-9a99c",
+    storageBucket: "my-portfolio-9a99c.appspot.com",
+    messagingSenderId: "292904057860"
+  }
 
 };
 
