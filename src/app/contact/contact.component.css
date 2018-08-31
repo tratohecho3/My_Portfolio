@@ -65,6 +65,15 @@ img {
     margin-top: -50px;
 }
 
+.wrapper-a {
+    color: black;
+}
+.fa-stack:hover {
+    cursor: pointer;
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1); /* Standard syntax */
+}
 @media (max-width: 575px) {
     .form-control {
         font-size: 1rem !important;

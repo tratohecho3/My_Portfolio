@@ -7,10 +7,17 @@
    }
 #first-text {
     margin-top: 150px;
+
 }
 #logo_cc {
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#logo_cc:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
 }
 a {
     color: white !important;
