@@ -9,20 +9,34 @@
       <div class="col">
           <mat-tab-group>
               <mat-tab label="Education" class="tab">
-                  <div class="jumbotron" id="jumbo-education">
-                      <h1 class="display-4 text-education title">Computer Engineering</h1>
-                      <div class="container-img">
-                          <img src="../assets/usb.png" alt="University logo" class="img-fluid img-edit">
-                      </div>
-                      <p class="lead text-education">Universidad Simon Bolivar</p>
-                      <p class="text-education date">2013-2017</p>
-                      <p class="text-education text">Best University of Engineering in Venezuela and my second home.</p>
-                      <hr class="my-4">
-                      <p class="text-education date">Completion of more than 30 Web Development courses. (300 hours)</p>
+                    <div class="card-deck">
+                            <div class="card">
+                              <img class="card-img-top" src="../../assets/simon.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Computer Engineering</h5>
+                                <h5 class="card-title">University Simon Bolivar</h5>
+                                <h5 class="card-title">2013-2017</h5>
+
+                                <p class="card-text">Best University of Engineering in Venezuela and my second home.</p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="../../assets/course.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="card-title">Web Development Courses</h5>
+                                    <h5 class="card-title">+450 hours</h5>
+                                    <p class="card-text">Completion of more than 45 Web Development courses.</p>
+
+                              </div>
+                            </div>
+                          </div>
+
+                  
+    
 
 
 
-                  </div>
+                  
               </mat-tab>
               <mat-tab label="Skills" class="tab"> <app-skills></app-skills> </mat-tab>
               <mat-tab label="Volunteer" class="tab"> <app-volunteer></app-volunteer> </mat-tab>
