@@ -22,6 +22,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FormsModule } from '@angular/forms';
 import { FireDbService } from './services/fire-db.service';
+import {MatSnackBarModule} from '@angular/material/snack-bar'
 
 const getWindow = () => window;
 const providers = [
@@ -48,7 +49,8 @@ const providers = [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule
 
   ],
   providers: [ProjectsService, WorksService, VolunteerService,FireDbService],
