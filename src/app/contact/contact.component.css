@@ -24,6 +24,11 @@
 
 }
 
+.resume {
+    margin: 10px;
+    display: inline-block;
+}
+
 .form-control {
     font-size: 1.5rem;
     padding: 15px;

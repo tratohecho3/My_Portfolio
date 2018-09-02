@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
     this.fireDb.saveContact(this.contact)
   }
   openSnackBar(message) {
-    this.snackBar.open(message, 'X', {duration:2500});
+    this.snackBar.open(message, 'X', {duration:10000});
   }
   onSubmit(form: NgForm) {
     if (form.valid) {
@@ -28,7 +28,7 @@ export class ContactComponent implements OnInit {
       this.contact.id = Date.now()
       this.saveContact()
       form.resetForm();
-      this.openSnackBar('Your Message has been submitted')
+      this.openSnackBar('Received, I will contact you as soon as possible')
     }
     else {
       console.log('error')
