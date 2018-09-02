@@ -20,6 +20,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { FormsModule } from '@angular/forms';
+import { FireDbService } from './services/fire-db.service';
+
 const getWindow = () => window;
 const providers = [
   { provide: WindowRef, useFactory: (getWindow) },
@@ -44,10 +47,11 @@ const providers = [
     ScrollSpyModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule
 
   ],
-  providers: [ProjectsService, WorksService, VolunteerService],
+  providers: [ProjectsService, WorksService, VolunteerService,FireDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

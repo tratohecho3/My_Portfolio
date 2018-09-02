@@ -9,35 +9,35 @@
       <div class="col">  
       <div class="jumbotron" id="jumbotron-contact">
         <h1 class="text-center main-title">Say Hello!</h1>
-        <form id="form-contact">
+        <form id="form-contact" (ngSubmit)="onSubmit(f)" #f="ngForm">
             <div class="container">
               <div class="row">
                 <div class="col d-none d-sm-block">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input required type="text" class="form-control" id="name" placeholder="Your name">
+                        <input required type="text" class="form-control" id="name" placeholder="Your name" [(ngModel)]="contact.name" name="name" #name="ngModel" [ngClass]="{'is-invalid': !name.valid && name.touched, 'is-valid':name.valid && name.touched }">
                     </div>
                     <div class="form-group">
                       <label for="email">Email address</label>
-                      <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your best email">
+                      <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your best email" name="email" [(ngModel)]="contact.email" #email="ngModel" [ngClass]="{'is-invalid': !email.valid && email.touched, 'is-valid':email.valid && email.touched}">
                       <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
                     </div>
                 </div>
                 <div class="col-12 d-block d-sm-none">
                   <div class="form-group">
                       <label for="name">Name</label>
-                      <input required type="text" class="form-control" id="name" placeholder="Your name">
+                      <input required type="text" class="form-control" id="name" placeholder="Your name" [(ngModel)]="contact.name" name="name" #name="ngModel" [ngClass]="{'is-invalid': !name.valid && name.touched, 'is-valid':name.valid && name.touched}">
                   </div>
                   <div class="form-group">
                     <label for="email">Email address</label>
-                    <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your best email">
+                    <input required type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Your best email" [(ngModel)]="contact.email" #email="ngModel" [ngClass]="{'is-invalid': !email.valid && email.touched, 'is-valid':email.valid && email.touched}" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
                   </div>
               </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Your message</label>
-                        <textarea required class="form-control" id="exampleFormControlTextarea1"  placeholder="How can I help you?" rows="5"></textarea>
+                        <textarea required class="form-control" id="exampleFormControlTextarea1"  placeholder="How can I help you?" rows="5" name="message" [(ngModel)]="contact.message" #message="ngModel" [ngClass]="{'is-invalid': !message.valid && message.touched, 'is-valid':message.valid && message.touched}"></textarea>
                       </div>
                 </div>
               </div>
