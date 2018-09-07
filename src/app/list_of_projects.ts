@@ -1,7 +1,7 @@
 import { Project } from './project';
 
 export const PROJECTS: Project[] = [
-    {title:'My Portfolio', description:'I created from scratch my own Web Site', image:"./assets/my_portfolio.jpg",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'localhost:4200', code: 'https://github.com/tratohecho3/My_Portfolio'},
+    {title:'My Portfolio', description:'I created from scratch my own Web Site', image:"./assets/my_portfolio.jpg",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://cesarcolina.com/', code: 'https://github.com/tratohecho3/My_Portfolio'},
     {title:'Mini-Spotify', description:'I created an app to find songs and play them using the spotify Api', image:"./assets/spotify.png",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://platzi-music-cqsleilvur.now.sh/', code: 'https://github.com/tratohecho3/platzi-music'},
     {title:'Mini-StackOverflow', description:'I created an app to ask and answer questions about techonology', image:"./assets/stack-overflow.png",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://fast-crag-54971.herokuapp.com/', code: 'https://github.com/tratohecho3/platzi-overflow'},
     {title:'My Social network', description:'I created from scratch my own Social Newtwork.', image:"./assets/social_network.png",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'none', code: 'https://github.com/tratohecho3/social_network'},
