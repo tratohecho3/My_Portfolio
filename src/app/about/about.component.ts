@@ -9,6 +9,7 @@ import { WorksService } from '../services/works.service';
 export class AboutComponent implements OnInit {
   works;
   index;
+  looking_job = false;
   constructor(private worksService: WorksService) { 
     this.works = worksService.get_works();
     this.index = this.works.length;

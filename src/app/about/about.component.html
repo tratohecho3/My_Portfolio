@@ -34,9 +34,9 @@
                   </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" >
                 <div class="col-5" *ngIf="index % 2 == 0">
-                        <div>
+                        <div *ngIf="looking_job">
                                 <h5 class="date text-left">September 2018</h5>
                                 <h3 class="title text-left">Full Stack Developer</h3>
                                 <h3 class="subtitle text-left">Your Project</h3>
@@ -45,12 +45,12 @@
                         </div>
                 </div>
                   <div class="offset-5" *ngIf="(index + 1) % 2 == 0"></div>
-                  <div class="col-2" id="box-circle">
+                  <div class="col-2" id="box-circle" >
                       <div class="img-circular" id="last-circle">
                           <p class="text-center" id="be_part">Be part of My History</p>
                       </div>
                   </div>
-                  <div class="col-5" *ngIf="(index + 1) % 2 == 0" id="column-right">
+                  <div class="col-5" *ngIf="(index + 1) % 2 == 0 && looking_job" id="column-right">
                         <div>
                                 <h5 class="date text-right">September 2018</h5>
                                 <h3 class="title text-right">Full Stack Developer</h3>
@@ -85,7 +85,7 @@
             <h4 class="subtitle">{{work.enterprise}}</h4>
           </div>
         </div>
-        <div class="row">
+        <div class="row" *ngIf="looking_job">
             <div class="offset-md-5"></div>
             <div class="col-2" id="box-circle">
                 <div class="img-circular" id="last-circle">
