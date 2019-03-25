@@ -1,0 +1,52 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/logo_editado.png" width="100" height="100" alt="Logo Cesar Colina" id="logo_cc">
+    </a>
+    <button id="hamburger-button" (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-1x">
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-bars fa-stack-1x"></i>
+          </span>
+      </i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav ml-auto" role="navigation" snScrollSpy id="foo">
+        <li class="nav-item">
+          <a class="nav-link" snScrollSpyItem for="foo" href="#services">Services <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" snScrollSpyItem for="foo" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" snScrollSpyItem for="foo" href="#timeline">Timeline</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" snScrollSpyItem for="foo" href="#about">About</a>
+        </li>
+        <li class="nav-item last-item">
+          <a class="nav-link"  snScrollSpyItem for="foo" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <header>
+    
+    <div class="jumbotron" id="startchange">
+      <h1 class="display-4 text-center text-banner" id="first-text">Bienvenido a tu</h1>
+      <h1 class="display-4 text-center text-banner-2">Academia Web</h1>
+      <span class="d-sm-none d-xs-none d-none d-md-block text-banner-3">
+          <p class="lead">Mi nombre es <strong>Cesar Colina</strong>  y sere tu <strong> instructor</strong>, En esta pagina encontraras todos mis cursos al mejor precio.</p>
+      </span>
+  
+  
+      <p class="lead text-center">
+        <a class="btn btn-primary btn-lg main-btn" href="#services" role="button">LET'S BEGIN</a>
+      </p>
+    </div>
+  </header>
