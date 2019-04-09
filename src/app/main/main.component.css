@@ -1,0 +1,188 @@
+/*HEADER*/
+#cursos_btn {
+    width: 100%;
+    border-color: #fed134;
+    color: #fed134;
+    font-weight: bold;
+}
+#cursos_btn:hover {
+    background-color: #fed134;
+    color: white;
+}
+@media (max-width: 574px) {
+    #cursos_btn {
+        margin-right: 20px;
+        width: 50%;
+        border-color: #fed134;
+        color: #fed134;
+        font-weight: bold;
+    }
+}
+@media (min-width: 1200px) { 
+    #cursos_btn {
+        margin-right: 40px;
+    }
+}
+  
+.offset:before { 
+    display: block; 
+    content: " "; 
+    margin-top: 5px; /* Give negative margin of your fixed element */   
+    visibility: hidden; 
+   }
+#first-text {
+    margin-top: 150px;
+
+}
+#logo_cc {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#logo_cc:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+a {
+    color: white !important;
+    transition: color .2s ease-in-out !important;
+  }
+   
+  a.active {
+    color: #fed134 !important;
+  }
+
+.navbar {
+    z-index: 5;
+    padding: 0;
+    width: 100vw;
+}
+.last-item {
+    margin-right: 400px;
+}
+.nav-link {
+    font-size: 21px;
+    margin-right: 15px;
+}
+.nav-item {
+    font-family: 'Cinzel', serif;    
+
+}
+.text-banner {
+    margin-top: 50px;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+}
+.text-banner-2 {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.text-banner-3 {
+    margin-top: 50px;
+}
+
+.navbar-brand {
+    margin-left: 25px;
+}
+
+.navbar-dark {
+    background: transparent;
+    border:none;
+}
+
+.active {
+    color: #fed134 !important;
+}
+
+.jumbotron {
+    background-image: url("../../assets/header-bg.jpg");
+    background-size: cover;
+    height: 800px;
+    color: white;
+    border-radius: 0 !important;
+}
+
+
+.main-btn {
+    background-color: #fed134;
+    border-color: #fed134;
+    padding: 15px 40px;
+    color: black !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;  
+    font-size: 18px;
+    color: white !important;
+
+}
+
+/*SERVICES*/
+.fa-circle {
+    color: #fed134;
+}
+
+
+/* CONTACT */
+#contact {
+    height: 800px;
+    /*
+    background-image: url("../assets/mac.png");
+    background-size: 150px;
+    width: 80%;
+    
+    background-size: cover;*/
+}
+
+#title-contact {
+    color: RED;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact {
+    background: #e9ecef;
+}
+
+#jumbotron-contact {
+    height: 100%;
+    
+}
+
+.form-control {
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.text-muted {
+    color: white !important;
+}
+
+#button-submit {
+    padding: 15px 40px;
+    background: #fed134;
+    border-color: #fed134;
+    font-size: 20px;
+    color: black;
+
+}
+
+
+/* ABOUT */
+#education {
+    background-color: #f7f7f7;
+    height: 100%;
+}
+
+
+
+.container-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+#about {
+    background: #f8f9fa;
+}

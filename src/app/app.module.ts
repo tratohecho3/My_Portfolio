@@ -8,6 +8,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component'
 import { ProjectsService } from './services/projects.service';
 import { AboutComponent } from './about/about.component';
 import { WorksService } from './services/works.service';
+import { CoursesService} from './services/courses.service'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SkillsComponent } from './skills/skills.component';
@@ -23,11 +24,17 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FormsModule } from '@angular/forms';
 import { FireDbService } from './services/fire-db.service';
 import {MatSnackBarModule} from '@angular/material/snack-bar'
-
+import { RouterModule, Routes } from '@angular/router';
+import { CursosComponent } from './cursos/cursos.component';
+import { MainComponent } from './main/main.component';
 const getWindow = () => window;
 const providers = [
   { provide: WindowRef, useFactory: (getWindow) },
 ];
+const appRoutes: Routes = [
+  { path: '', component: MainComponent },
+  { path: 'cursos',component: CursosComponent }];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +43,9 @@ const providers = [
     SkillsComponent,
     VolunteerComponent,
     About2Component,
-    ContactComponent
+    ContactComponent,
+    CursosComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -50,10 +59,12 @@ const providers = [
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     FormsModule,
-    MatSnackBarModule
-
+    MatSnackBarModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
-  providers: [ProjectsService, WorksService, VolunteerService,FireDbService],
+  providers: [ProjectsService, WorksService, VolunteerService,FireDbService,CoursesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

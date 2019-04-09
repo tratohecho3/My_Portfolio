@@ -1,0 +1,178 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/logo_editado.png" width="100" height="100" alt="Logo Cesar Colina" id="logo_cc">
+    </a>
+    <button id="hamburger-button" (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-1x">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-bars fa-stack-1x"></i>
+        </span>
+      </i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav ml-auto" role="navigation" snScrollSpy id="foo">
+        <li class="nav-item">
+          <a class="nav-link" snScrollSpyItem for="foo" href="#services">Services <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" snScrollSpyItem for="foo" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" snScrollSpyItem for="foo" href="#timeline">Timeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" snScrollSpyItem for="foo" href="#about">About</a>
+        </li>
+        <li class="nav-item last-item">
+          <a class="nav-link" snScrollSpyItem for="foo" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<header>
+
+  <div class="jumbotron" id="startchange">
+    <h1 class="display-4 text-center text-banner" id="first-text">Bienvenido a tu</h1>
+    <h1 class="display-4 text-center text-banner-2">Academia Web</h1>
+
+  </div>
+</header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col first-row">
+        <h1 class="text-center main-title">Cursos</h1>
+        <h5 class="text-center">En esta pagina encontraras todos mis cursos al mejor precio.</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+          <div class="card card-promotions">
+
+              <h5 class="card-header">
+                  <i class="fa fa-1x">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fas fa-check fa-stack-1x fa-check"></i>
+                      </span>
+                  </i>
+                Compra Normal
+              </h5>
+              <div class="card-body">
+                <ul>
+                  <li>
+                      <h5 class="card-title">Curso Completo Actualizado</h5>
+                  </li>
+                  <li>
+                      <h5 class="card-title">Respuestas a preguntas en la Plataforma</h5>
+                  </li>
+                
+                </ul>
+                
+              </div>
+            </div>
+      </div>
+      <div class="col-md-8">
+          <div class="card card-promotions">
+              <i class="fa fa-1x">
+
+
+                  <h5 class="card-header">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x fa-top"></i>
+                          <i class="fas fa-check fa-stack-1x fa-check"></i>
+                      </span>
+                    Compra Premium
+                  </h5>
+
+              </i>
+              <div class="card-body">
+                  <ul>
+                      <li>
+                          <h5 class="card-title">Curso Completo Actualizado</h5>
+                      </li>
+                      <li>
+                          <h5 class="card-title">Respuestas a preguntas en la Plataforma</h5>
+                      </li>
+                      <li>
+                          <h5 class="card-title">Acceso a grupo privado de Discord</h5>
+                      </li>
+                      <li>
+                          <h5 class="card-title">Primero en saber de lanzamientos de cursos <span class="text-small">(Siempre saldran gratis por unas pocas horas)</span></h5>
+                      </li>
+                    </ul>
+              </div>
+            </div>
+      </div>
+
+    </div>
+<br>
+
+
+<div class="row">
+  <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12 portfolio-item" *ngFor="let course of courses">
+    <div class="card-deck"> 
+      <div class="card">
+        <img class="card-img-top" src="{{course.image}}" alt="{{course.title}}">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{course.title}}</h5>
+          <p class="card-text text-center">{{course.description}}</p>
+          <div class="container-buttons text-center">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-2">
+                      <a href="{{course.view}}" target="_blank" *ngIf="course.view != 'none'">
+                          <i class="fa fa-1x">
+                              <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fas fa-check fa-stack-1x"></i>
+                              </span>
+                          </i>
+                        </a>
+                  </div>
+                  <div class="col-md-10">
+                      <button type="button" class="btn btn-info btn-sell">Comprar en Udemy</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-2">
+                      <a href="{{course.view}}" target="_blank" *ngIf="course.view != 'none'">
+                          <i class="fa fa-1x">
+                              <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x fa-top"></i>
+                                  <i class="fas fa-check fa-stack-1x"></i>
+                              </span>
+                          </i>
+                        </a>
+                  </div>
+                  <div class="col-md-10">
+                      <button type="button" class="btn btn-info btn-sell">Comprar en Academia Web</button>
+
+                  </div>
+                </div>
+            </div>
+            
+          </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
