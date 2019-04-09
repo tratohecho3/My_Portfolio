@@ -75,7 +75,6 @@ a {
 .jumbotron {
     background-image: url("../../assets/header-bg.jpg");
     background-size: cover;
-    height: 800px;
     color: white;
     border-radius: 0 !important;
 }
@@ -160,4 +159,25 @@ a {
 
 #about {
     background: #f8f9fa;
+}
+
+
+
+.btn-sell {
+    width: 100%
+}
+
+.fa-top {
+    color: #008844
+}
+.fa-check {
+    color:white;
+}
+
+.text-small {
+    font-size: 14px;
+    font-weight: bold;
+}
+.card-promotions {
+    height: 100%;
 }

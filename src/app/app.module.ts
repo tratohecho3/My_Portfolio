@@ -8,6 +8,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component'
 import { ProjectsService } from './services/projects.service';
 import { AboutComponent } from './about/about.component';
 import { WorksService } from './services/works.service';
+import { CoursesService} from './services/courses.service'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SkillsComponent } from './skills/skills.component';
@@ -63,7 +64,7 @@ const appRoutes: Routes = [
       appRoutes
     )
   ],
-  providers: [ProjectsService, WorksService, VolunteerService,FireDbService],
+  providers: [ProjectsService, WorksService, VolunteerService,FireDbService,CoursesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
