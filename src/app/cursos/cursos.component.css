@@ -181,3 +181,7 @@ a {
 .card-promotions {
     height: 100%;
 }
+
+.btn-email {
+    background-color: #008844 !important;
+}
