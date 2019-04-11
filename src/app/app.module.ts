@@ -27,13 +27,15 @@ import {MatSnackBarModule} from '@angular/material/snack-bar'
 import { RouterModule, Routes } from '@angular/router';
 import { CursosComponent } from './cursos/cursos.component';
 import { MainComponent } from './main/main.component';
+import { CourseSpecComponent } from './course-spec/course-spec.component';
 const getWindow = () => window;
 const providers = [
   { provide: WindowRef, useFactory: (getWindow) },
 ];
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'cursos',component: CursosComponent }];
+  { path: 'cursos',component: CursosComponent },
+  { path: 'cursos/:id',component: CourseSpecComponent }];
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     About2Component,
     ContactComponent,
     CursosComponent,
-    MainComponent
+    MainComponent,
+    CourseSpecComponent
   ],
   imports: [
     BrowserModule,
