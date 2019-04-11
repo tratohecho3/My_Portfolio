@@ -8,6 +8,7 @@ import { CoursesService } from '../services/courses.service';
   styleUrls: ['./course-spec.component.css']
 })
 export class CourseSpecComponent implements OnInit {
+  public isCollapsed = true;
   public course;
   public password;
   public wrong_password = false;
