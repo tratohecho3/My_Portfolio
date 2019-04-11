@@ -7,6 +7,7 @@ import { CoursesService } from '../services/courses.service';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent implements OnInit {
+  public isCollapsed = true;
   public courses;
   constructor(private courseService: CoursesService) { 
     this.courses = courseService.get_courses()
