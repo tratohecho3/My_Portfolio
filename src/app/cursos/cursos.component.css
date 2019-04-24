@@ -5,6 +5,17 @@
     margin-top: 5px; /* Give negative margin of your fixed element */   
     visibility: hidden; 
    }
+
+#logo_academia {
+    width: 40%;
+    height: 50%;
+}
+@media (max-width: 1199px) {
+    #logo_academia {
+        width: 100%        
+    }
+}
+
 #first-text {
     margin-top: 150px;
 
