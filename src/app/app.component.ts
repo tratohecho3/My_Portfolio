@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 export class AppComponent implements OnInit {
   isCollapsed = true;
   public ngOnInit() {
-    $(document).ready(function(){       
+    $(document).ready(function(){    
       var scroll_start = 0;
       var startchange = $('#startchange');
       var offset = startchange.offset();
