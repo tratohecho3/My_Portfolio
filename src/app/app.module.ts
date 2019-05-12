@@ -24,7 +24,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FormsModule } from '@angular/forms';
 import { FireDbService } from './services/fire-db.service';
 import {MatSnackBarModule} from '@angular/material/snack-bar'
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { CursosComponent } from './cursos/cursos.component';
 import { MainComponent } from './main/main.component';
 import { CourseSpecComponent } from './course-spec/course-spec.component';
@@ -36,7 +36,11 @@ const appRoutes: Routes = [
   { path: '', component: MainComponent },
   { path: 'cursos',component: CursosComponent },
   { path: 'cursos/:id',component: CourseSpecComponent }];
-
+  const routerOptions: ExtraOptions = {
+    useHash: false,
+    anchorScrolling: 'enabled',
+    // ...any other options you'd like to use
+  };
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +68,8 @@ const appRoutes: Routes = [
     FormsModule,
     MatSnackBarModule,
     RouterModule.forRoot(
-      appRoutes
+      appRoutes,
+      routerOptions
     )
   ],
   providers: [ProjectsService, WorksService, VolunteerService,FireDbService,CoursesService],
