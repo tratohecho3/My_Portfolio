@@ -33,9 +33,17 @@ area: 'Machine Learning'
 },
 {title:'Web Developer', description: `Full Stack Development`,
 image: '../../assets/AM.png', 
-date: 'October 2018 – Current',
+date: 'October 2018 – May 2019',
 address: 'Montreal, Canada',
 enterprise: ' Action Media, Canada',
+area: 'Full Stack Development'
+
+},
+{title:'Application Developer', description: `Full Stack Development`,
+image: '../../assets/dynamicly.png', 
+date: 'Jun 2019 – Current',
+address: 'Montreal, Canada',
+enterprise: ' Dynamicly, Canada',
 area: 'Full Stack Development'
 
 }

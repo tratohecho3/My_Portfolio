@@ -1,8 +1,8 @@
 import { Project } from './project';
 
 export const PROJECTS: Project[] = [
-    //{title:'Adsurge', description:'Main developer of Adsurge', image:"./assets/adsurge2.png",type_of_project:'Full Stack Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://www.adsurge.com/', code: 'none'},
-    //{title:'Adcenter', description:'Developer of Adcenter', image:"./assets/adcenter.jpeg",type_of_project:'Full Stack Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://www.ad-center.com/', code: 'none'},
+    {title:'Adsurge', description:'Main developer of Adsurge', image:"./assets/adsurge2.png",type_of_project:'Full Stack Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://www.adsurge.com/', code: 'none'},
+    {title:'Adcenter', description:'Developer of Adcenter', image:"./assets/adcenter.jpeg",type_of_project:'Full Stack Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://www.ad-center.com/', code: 'none'},
     {title:'My Portfolio', description:'I created from scratch my own Web Site', image:"./assets/my_portfolio.jpg",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://cesarcolina.com/', code: 'https://github.com/tratohecho3/My_Portfolio'},
     {title:'Mini-Spotify', description:'I created an app to find songs and play them using the spotify Api', image:"./assets/spotify.png",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://platzi-music-sppcxnnqgf.now.sh/', code: 'https://github.com/tratohecho3/platzi-music'},
     {title:'Mini-StackOverflow', description:'I created an app to ask and answer questions about technology', image:"./assets/stack-overflow.png",type_of_project:'Frontend Development',techologies:['html','css','javascript','angular','bootstrap'], view: 'https://fast-crag-54971.herokuapp.com/', code: 'https://github.com/tratohecho3/platzi-overflow'},
