@@ -8,7 +8,7 @@ export const COURSES: Course[] = [
         description:'El curso mas completo antes de Angular', 
         image:"./assets/curso_TS2.jpg",
         teachable:"https://www.academiaweb.ca/p/typescript/?coupon_code=PAGINAWEB", 
-        udemy:"https://www.udemy.com/curso-de-typescript-2019-esencial-el-curso-antes-de-angular/?couponCode=PAGINAWEB", 
+        udemy:"https://www.udemy.com/course/curso-de-typescript-2019-esencial-el-curso-antes-de-angular/?referralCode=41B1A84B9C10D5C30568", 
         youtube: ""
     },
 
