@@ -21,8 +21,18 @@ export const COURSES: Course[] = [
         teachable:"https://www.academiaweb.ca/p/introduccion-a-la-programacion-git-terminal", 
         udemy:"none", 
         youtube: ""
-    }
+    },
 
+    {
+        id:2, 
+        password:'clave123', 
+        title:'Git y Github Profesional', 
+        description:'Domina el Sistema de Control de Versiones', 
+        image:"./assets/curso_git_github.jpg",
+        teachable:"https://www.academiaweb.ca/p/git-y-github-profesional/?coupon_code=PAGINAWEB", 
+        udemy:"https://www.udemy.com/course/curso-de-git-y-github-git-profesional-desde-cero/?referralCode=82C485B01B3E73BFD078", 
+        youtube: ""
+    }
     
 
 ]
